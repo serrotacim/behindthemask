@@ -1,0 +1,338 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+ 
+html{ 
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+}
+
+.logo{
+    height: 200px;
+}
+
+/*---------INDEX----------*/
+
+
+.bodyindex{
+    position: relative;
+    background-size: cover;
+    background-image: url(../multimedia/fotopri.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
+}
+
+.menu ul li{
+    display: inline-block;
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.menu ul a:hover{
+    background-color: red;
+}
+
+.encabezado {
+    background-color: rgb(0, 0, 0 , 0.7);
+
+}
+
+.menu {
+    margin-top: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 3%; 
+}
+
+.tituloprin {
+    color:white;
+    font-weight:bold;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulosecu {
+    color:white;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.subtitulo {
+        color:white;
+        font-weight: normal;
+        font-size: 24px;
+        text-align: left;
+        margin-bottom: 10%;
+}
+
+
+.finalpag  {
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    font-weight: lighter;
+    display:inline-block;
+    text-align: center;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    content: icon;
+}
+
+.redessociales a:hover{
+background-color: red;
+}
+
+
+.redessociales img{
+    width: 30px;
+}
+
+.redessociales {
+    position: absolute;
+    right: 0%
+}
+
+
+/*---BODY HISTORIA DISCO FOTOS CONTACTO---*/
+
+
+.cuerpo { 
+    background-color: black;
+    font-family: 'Red Hat Display', sans-serif;
+ 
+}
+
+/*--------HISTORIA--------*/
+
+.container img {
+    margin: 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.historiarey {
+    text-align: left;
+    color:white;
+    font-weight:bold;
+    font-size: 30px;
+    margin: 50px 20px 100px 20px;
+
+}
+
+.titulo1{
+    color:white;
+    font-weight:bold;
+    text-align: left;
+    font-size: 25px;
+    margin: 20px 50px 20px 20px;
+}
+
+.texto1 {
+    color:white;
+    display: inline-block;
+    font-weight:normal;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 50px 20px 20px;
+
+
+}
+
+
+/*--------CONTACTO--------*/
+
+.contacto {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight:bold;
+
+    font-size: 28px;
+    text-align: left;
+}
+.contacto2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 24px;
+    text-align: left;
+}
+
+.mjcomputer {
+    width: 400px;
+    height: 400px;
+    background-position:right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    grid-area: mjcomputer;
+    justify-items: center;
+    
+}
+
+.formulario {
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+}
+
+label{
+    color: white;
+    display: inline-block;
+    font-size: 18px; 
+    vertical-align: top;
+}
+
+
+
+.contactogrid {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr auto;
+    grid-template-areas:
+"logo menu"
+"mjcomputer contacto"
+"footer footer";
+    
+}
+.contacto-container {
+    grid-area: contacto;
+}
+
+footer{
+	grid-area: footer;
+}
+
+input {
+    width: 250px;
+    transition: all 2s;
+
+}
+input:focus {
+    width: 350px;
+    background-color: red;
+}
+
+/*--------DISCOGRAFIA--------*/
+
+
+iframe {
+    margin: 20px 20px;
+}
+
+/*.disco-container {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: repeat (9,  0,2fr) ;
+    grid-template-areas: 
+    "logo menu"
+    "offthewall offthewall"
+    "thriller thriller"
+    "bad bad"
+    "dangerous dangerous"
+    "history history"
+    "blood blood"
+    "invincible invincible"
+    "footer footer";
+    grid-row-gap: 40px;
+}*/
+.album-responsive{
+    margin: 20px;
+    display: flex;
+    align-items:center;
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px;
+     border: 7px solid white
+}
+.img-disco {
+    margin-top: 40px;
+    height: 300px;
+}
+.disco-encabezado {
+    grid-area: logo;
+}
+
+
+.disco_texto1 {
+    border-radius: 4%;
+    color:white;
+    font-weight:bolder ;
+    font-size: 25px;
+    text-align: left;
+    margin: 20px;
+}
+.disco_texto1__texto2 {
+    color:white;
+    font-weight:normal ;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 50px 20px 20px;
+}
+
+.album-container{
+    display:flex;
+    align-items:center;
+   justify-content: space-around;
+}
+
+
+/*-------DISCO-MOBILE-------*/
+
+@media screen and (max-width: 500px) {
+
+.menu ul li {
+    font-size: 10px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.album-responsive {
+        flex-direction: column;
+        margin: 20px 10px 40px 5px;
+        align-items: stretch;
+
+}
+
+.disco_texto1 {
+        display: inline;
+        font-size: 20px;
+        margin: 10px;
+}
+
+.disco_texto1__texto2 {
+        font-size: 10px;
+        margin-left: 10px;
+}
+    
+.img-disco {
+        margin-top: 40px;
+        height: 150px;
+}
+
+.redessociales img {
+        width: 10px;
+    }
+    
+    .finalpag  {
+        font-size: 10px;
+}
+
+}
