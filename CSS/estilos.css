@@ -9,21 +9,12 @@ html{
     height: 100%;
 }
 
+
+/*--------HEADER--------*/
+
+
 .logo{
     height: 200px;
-}
-
-/*---------INDEX----------*/
-
-
-.bodyindex{
-    position: relative;
-    background-size: cover;
-    background-image: url(../multimedia/fotopri.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
-
 }
 
 .menu ul li{
@@ -38,14 +29,28 @@ html{
 
 .encabezado {
     background-color: rgb(0, 0, 0 , 0.7);
+    display: flex;
+    justify-content: space-between;
+    grid-area: encabezado;
+    margin-bottom: 20px;
 
 }
 
 .menu {
     margin-top: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 3%; 
+
+}
+/*---------INDEX----------*/
+
+
+.bodyindex{
+    position: relative;
+    background-size: cover;
+    background-image: url(../multimedia/fotopri.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+
 }
 
 .tituloprin {
@@ -205,7 +210,7 @@ label{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr auto;
     grid-template-areas:
-"logo menu"
+"encabezado encabezado"
 "mjcomputer contacto"
 "footer footer";
     
@@ -235,22 +240,7 @@ iframe {
     margin: 20px 20px;
 }
 
-/*.disco-container {
-    display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: repeat (9,  0,2fr) ;
-    grid-template-areas: 
-    "logo menu"
-    "offthewall offthewall"
-    "thriller thriller"
-    "bad bad"
-    "dangerous dangerous"
-    "history history"
-    "blood blood"
-    "invincible invincible"
-    "footer footer";
-    grid-row-gap: 40px;
-}*/
+
 .album-responsive{
     margin: 20px;
     display: flex;
@@ -294,7 +284,7 @@ iframe {
 
 /*-------DISCO-MOBILE-------*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1000px) {
 
 .menu ul li {
     font-size: 10px;
@@ -307,7 +297,7 @@ iframe {
 .album-responsive {
         flex-direction: column;
         margin: 20px 10px 40px 5px;
-        align-items: stretch;
+        align-items: center;
 
 }
 
