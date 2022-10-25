@@ -10,11 +10,11 @@ html{
 }
 
 
-/*--------HEADER--------*/
+/*--------HEADER-PAGINAS--------*/
 
 
 .logo{
-    height: 200px;
+    height: 150px;
 }
 
 .menu ul li{
@@ -40,8 +40,51 @@ html{
     margin-top: 30px;
 
 }
-/*---------INDEX----------*/
 
+
+
+
+/*--------FOOTER PAGINAS--------*/
+
+footer {
+    display: flex;
+    flex-direction: center;
+    grid-area: footer;
+}
+
+.finalpag  {
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    font-weight: lighter;
+   /* display:inline-block;
+    text-align: center; */
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    content: icon;
+}
+
+.redessociales a:hover{
+background-color: red;
+}
+
+
+.redessociales img{
+    width: 30px;
+}
+
+.redessociales {
+    position: absolute;
+    right: 0%
+}
+
+
+/*---------INDEX----------*/
 
 .bodyindex{
     position: relative;
@@ -219,10 +262,6 @@ label{
     grid-area: contacto;
 }
 
-footer{
-	grid-area: footer;
-}
-
 input {
     width: 250px;
     transition: all 2s;
@@ -282,7 +321,7 @@ iframe {
 }
 
 
-/*-------DISCO-MOBILE-------*/
+/*--------MOBILE-------*/
 
 @media screen and (max-width: 1000px) {
 
@@ -291,9 +330,38 @@ iframe {
 }
 
 .logo{
-    height: 100px;
+    height: 80px;
 }
 
+.finalpag  {
+    font-size: 10px;
+}
+
+.redessociales img {
+    width: 10px;
+}
+
+/*--------INDEX--------*/
+
+.tituloprin {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titulosecu {
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.subtitulo {
+        font-size: 15px;
+        margin-bottom: 10%;
+}
+
+
+
+/*--------DISCO--------*/
 .album-responsive {
         flex-direction: column;
         margin: 20px 10px 40px 5px;
@@ -321,8 +389,4 @@ iframe {
         width: 10px;
     }
     
-    .finalpag  {
-        font-size: 10px;
-}
-
 }
