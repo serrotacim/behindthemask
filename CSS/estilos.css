@@ -57,8 +57,8 @@ footer {
     color:white;
     text-decoration: none;
     font-weight: lighter;
-   /* display:inline-block;
-    text-align: center; */
+    display:inline-block;
+    text-align: center;
 
 }
 
@@ -333,12 +333,18 @@ iframe {
     height: 80px;
 }
 
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .finalpag  {
     font-size: 10px;
+    text-align: center;
 }
 
 .redessociales img {
     width: 10px;
+    justify-content: flex-end;
 }
 
 /*--------INDEX--------*/
@@ -389,4 +395,16 @@ iframe {
         width: 10px;
     }
     
+    .bodyindex {
+        background: rgb(224,224,224);
+        background: linear-gradient(0deg, rgba(224,224,224,1) 0%, rgba(139,139,139,1) 27%, rgba(117,117,117,1) 32%, rgba(68,67,67,1) 40%, rgba(39,39,39,1) 46%, rgba(13,13,13,1) 60%, rgba(0,0,0,1) 76%);
+    }
+
+
+
+
+
+
+
+
 }
