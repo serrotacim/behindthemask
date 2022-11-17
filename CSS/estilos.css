@@ -20,6 +20,7 @@ nav {
 
 .nav-item a:hover {
     background-color: red;
+
 }
 
 a.nav-link {
@@ -27,6 +28,11 @@ a.nav-link {
     font-size: 25px;
     font-weight: bold;
     margin: 10px;
+}
+
+#navbarNavDropdown {
+    flex-direction: row;
+    justify-content: end;
 }
 
 /*--------FOOTER PAGINAS--------*/
@@ -99,11 +105,11 @@ background-color: red;
     padding: 10px;
 }
 .subtitulo {
-        color:white;
-        font-weight: normal;
-        font-size: 24px;
-        text-align: left;
-        margin-bottom: 10%;
+    color:white;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 10%;
 }
 
 
@@ -149,7 +155,9 @@ background-color: red;
 
 /*--------HISTORIA--------*/
 
-
+.cajacontenedora {
+    display: flex;
+}
 .historiarey {
     text-align: left;
     color:white;
@@ -181,43 +189,66 @@ background-color: red;
 
 /*--------CONTACTO--------*/
 
-.contacto {
+.cajacontacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulocontacto {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 20px;
-    color: white;
     font-weight:bold;
-
     font-size: 28px;
-    text-align: left;
+    background-color: white;   
+    border-radius: 22px 22px 22px 22px;
+    -moz-border-radius: 22px 22px 22px 22px;
+    -webkit-border-radius: 22px 22px 22px 22px; 
 }
-.contacto2 {
+.titulocontacto__subtitulo {
+    text-align: center;
+    width: 200;
+    height: 200;
     margin-bottom: 20px;
     margin-left: 20px;
     color: white;
     font-weight: normal;
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
+}
+.contacto {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: white;
+    font-weight:bold;
+    font-size: 28px;
     text-align: left;
 }
 
 .mjcomputer {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     background-position:right;
     margin-left: 20px;
     margin-bottom: 20px;
-    grid-area: mjcomputer;
     justify-items: center;
     
 }
 
 .formulario {
-    margin-bottom: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
     margin-left: 20px;
+    width: 300px;;
+    height: 300px;
 
 }
-
 label{
     color: white;
     display: inline-block;
@@ -225,27 +256,10 @@ label{
     vertical-align: top;
 }
 
-
-
-.contactogrid {
-    display: flex;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr auto;
-    grid-template-areas:
-"encabezado encabezado"
-"mjcomputer contacto"
-"footer footer";
-    
-}
-.contacto-container {
-    grid-area: contacto;
-}
-
 input {
     width: 250px;
     transition: all 2s;
-
+    
 }
 input:focus {
     width: 350px;
@@ -320,6 +334,15 @@ iframe {
     align-items:center;
    justify-content: space-around;
 }
+/*--------GALERIA------*/
+.carousel {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+}
+
+
+
 
 
 /*--------MOBILE-------*/
@@ -349,7 +372,12 @@ a.nav-link{
 .a {
     display: inline-block;
 }
-
+button {
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 40px;
+}
 
 
 /*--------INDEX--------*/
@@ -363,6 +391,10 @@ nav {
     background-color: none;
 }
 
+.container-fluid {
+    display: flex;
+    flex-direction:column;
+}
 
 .tituloprin {
     text-align: center;
@@ -394,14 +426,22 @@ nav {
 
 }
 
+.titulo {
+    font-size: 20px;
+}
+.titulo__disco {
+    font-size: 10px;
+}
 .disco_texto1 {
         display: inline-block;
         font-size: 20px;
+        text-align: center;
         margin: 10px;
         width: 100%;
 }
 
 .disco_texto1__texto2 {
+    text-align: center;
         font-size: 10px;
         margin-left: 10px;
 }
@@ -412,8 +452,78 @@ nav {
         height: 150px;
 }
 
+.album-container {
+    flex-wrap: wrap;
+}
 
 
+
+/*--------GALERIA--------*/
+
+.carousel {
+    width: 400px;
+    height: 400px;
+
+}
+
+/*--------CONTACTO--------*/
+
+
+.titulocontacto {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight:bold;
+    font-size: 25px;
+}
+.titulocontacto__subtitulo {
+    text-align: center;
+    width: 200;
+    height: 200;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    color: white;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    
+}
+.contacto {
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+.mjcomputer {
+    width: 400px;
+    height: 400px;
+    background-position:right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    grid-area: mjcomputer;
+    justify-items: center;
+    
+}
+
+.formulario {
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    width: 500px;;
+    height: 500px;
+
+}
+label{
+    color: white;
+    display: inline-block;
+    font-size: 18px; 
+    vertical-align: top;
+}
 
 
 }
